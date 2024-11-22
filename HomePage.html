@@ -46,17 +46,36 @@
 
    <header class="header">
   <!-- Logo Section -->
-  <div class="logo-section">
+
+
+  <!-- Navigation Section -->
+  <nav class="nav-bar">
+    <!-- User Options -->
+    
+     <div class="menu-icons">
+    <img
+      class="menu-icon open-menu"
+      src="images/menu.png"
+      alt="Open Menu Icon"
+      onclick="toggleMenu(true)"
+    />
+    <img
+      class="menu-icon close-menu"
+      src="images/close-icon.png"
+      alt="Close Menu Icon"
+      onclick="toggleMenu(false)"
+    />
+  </div>
+    <div class="logo-section">
     <img
       class="logo"
       src="images/image-removebg-preview-10.png"
       alt="Brand Logo"
     />
   </div>
-
-  <!-- Navigation Section -->
-  <nav class="nav-bar">
-    <!-- User Options -->
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+  
     <div class="user-options">
       <img class="user-icon" src="images/bxs-user0.svg" alt="User Icon" />
       <div class="user-actions">
@@ -68,9 +87,8 @@
         />
       </div>
     </div>
-
-    <!-- Navigation Links -->
-    <ul class="nav-links">
+    <div class="nav-items">
+    <h4>Our Categories</h4>
       <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
@@ -84,6 +102,7 @@
           alt="Dropdown Arrow"
         />
       </li>
+      </div>
     </ul>
   </nav>
 
@@ -497,6 +516,18 @@
   </div>
 </footer>
 
-  
+  <script>function toggleMenu(isOpen) {
+  const navLinks = document.querySelector('.nav-links');
+  const menuIcons = document.querySelector('.menu-icons');
+
+  if (isOpen) {
+    navLinks.classList.add('show'); // Show menu
+    menuIcons.classList.add('open'); // Switch to close icon
+  } else {
+    navLinks.classList.remove('show'); // Hide menu
+    menuIcons.classList.remove('open'); // Switch to open icon
+  }
+}
+</script>
 </body>
 </html>

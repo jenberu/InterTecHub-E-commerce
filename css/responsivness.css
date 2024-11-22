@@ -58,7 +58,74 @@
 
   }
   }
+  @media (max-width: 1070px) {
+  .menu-icons {
+    display: block;
+  }
+
+  .nav-links {
+    width: 50%;
+    display: none; /* Hide by default */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color:white;
+    padding: 20px;
+    z-index: 100;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show when toggled */
+  }
+  .user-options{
+    border-bottom: 1px solid blue;
+    padding: 10px;
+
+
+  }
+  .nav-items{
+    display: block;
+    margin-right: auto;
+    align-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid blue;
+
+  }
+  .nav-items h4{
+    display: block;
+    margin: 10px;
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  
+
+  /* When menu is open, show close icon */
+  .menu-icons.open .open-menu {
+    display: none;
+  }
+  .menu-icons.open .close-menu {
+    display: block;
+  }
+
+  /* When menu is closed, show open icon */
+  .menu-icons:not(.open) .open-menu {
+    display: block;
+  }
+  .menu-icons:not(.open) .close-menu {
+    display: none;
+  }
+
+
+}
+
+
 @media (max-width: 768px) {
+
+ 
 
 
   .our-curated-summer-collection {

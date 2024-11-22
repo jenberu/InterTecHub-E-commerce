@@ -22,6 +22,25 @@
     align-items: center;
     gap: 20px;
   }
+
+  .menu-icons {
+    display: none;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu-icon.open-menu {
+    display: block; /* Open menu icon shown initially */
+  }
+  
+  .menu-icon.close-menu {
+    display: none; /* Close menu icon hidden initially */
+  }
   
   .nav-links {
     display: flex;
@@ -30,11 +49,19 @@
     padding: 0;
     margin: 0;
   }
-  
+  .nav-items{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .nav-items h4{
+    display: none;
+  }
   .nav-item .nav-link {
     text-decoration: none;
     color: #333;
     font-size: 16px;
+   
   }
   
   .dropdown-label {
