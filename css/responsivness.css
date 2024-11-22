@@ -1,0 +1,253 @@
+
+/* For Tablets (portrait) and smaller screens */
+
+
+
+
+@media (max-width: 1024px) {
+    .ellipse-3 {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .ellipse-4 {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .ellipse-5 {
+      width: 230px;
+      height: 230px;
+   
+    }
+  
+    .gebeya,
+    .shop {
+      font-size: 100px;
+     
+    }
+  
+    .discover-a-world-of-convenience-with-our-user-friendly-platform-curaated-collections-and-exceptional-customer-service {
+      font-size: 18px;
+      width: 350px;
+     
+    }
+  
+    .frame-26 {
+      width: 280px;
+      height: 55px;
+     
+    }
+  
+    .explore-now {
+      font-size: 20px;
+    }
+    
+  .explore-our-curated-summer-collection-featuring-trending-styles-vibrant-colors-and-lightweight-fabrics-perfect-for-long-days-and-nights {
+    font-size: 18px;
+    width: 90%;
+   
+    z-index: 2;
+
+  }
+
+  .frame-66 {
+    width: 220px;
+   
+    z-index: 2;
+
+  }
+  }
+@media (max-width: 768px) {
+
+
+  .our-curated-summer-collection {
+    font-size: 32px;
+    width: 80%;  
+    left: 20px;
+    top: 20px;
+
+  }
+
+  .explore-our-curated-summer-collection-featuring-trending-styles-vibrant-colors-and-lightweight-fabrics-perfect-for-long-days-and-nights {
+    font-size: 18px;
+    width: 90%;
+    left: 20px;
+    top: 150px;
+    z-index: 2;
+
+  }
+
+  .frame-66 {
+    width: 220px;
+    left: calc(50% - 110px);  
+    top: 320px;
+    z-index: 2;
+
+  }
+
+  ._131764372-table-top-view-accessory-of-clothing-women-men-plan-to-travel-in-summer-holiday-background-concept-1 {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+
+
+  }
+
+  .ellipse-6, .ellipse-9, .ellipse-13, .ellipse-10, .ellipse-11, .ellipse-7, .ellipse-8, .ellipse-12, .ellipse-14 {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Adjust positioning for smaller screens */
+  .ellipse-6 { left: 600px; top: 350px; }
+  .ellipse-9 { left: 400px; top: 350px; }
+  .ellipse-13 { left: 500px; top: 280px; }
+  .ellipse-10 { left: 460px; top: 20px; }
+  .ellipse-11 { left: 350px; top: 300px; }
+  .ellipse-7 { left: 560px; top: 20px; }
+  .ellipse-8 { left: 540px; top: 180px; }
+  .ellipse-12 { left: 550px; top: 120px; }
+  .ellipse-14 { left: 650px; top: 60px; }
+
+
+
+  .ellipse-3 {
+    width: 200px;
+    height: 200px;
+    top: 100px;
+  }
+
+  .ellipse-4 {
+    width: 180px;
+    height: 180px;
+    top: 380px;
+  }
+
+  .ellipse-5 {
+    width: 220px;
+    height: 220px;
+    left: calc(50% - 400px);
+    top: 300px;
+  }
+
+  .gebeya,
+  .shop {
+    font-size: 80px;
+    left: 20px;
+    top: 130px;
+  }
+
+  .discover-a-world-of-convenience-with-our-user-friendly-platform-curaated-collections-and-exceptional-customer-service {
+    font-size: 16px;
+    width: 300px;
+    left: 20px;
+    top: 206px;
+  }
+
+  .frame-26 {
+    width: 250px;
+    height: 50px;
+    top: 570px;
+  }
+
+  .explore-now {
+    font-size: 18px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .frame-65 {
+    height: auto;
+    padding: 15px;
+  }
+
+  .our-curated-summer-collection {
+    font-size: 24px;
+    width: 100%;
+    left: 10px;
+    top: 10px;
+  }
+
+  .explore-our-curated-summer-collection-featuring-trending-styles-vibrant-colors-and-lightweight-fabrics-perfect-for-long-days-and-nights {
+    font-size: 16px;
+    width: 100%;
+    left: 10px;
+    top: 120px;
+  }
+
+  .frame-66 {
+    width: 180px;
+    left: calc(50% - 90px);  
+    top: 270px;
+  }
+
+  ._131764372-table-top-view-accessory-of-clothing-women-men-plan-to-travel-in-summer-holiday-background-concept-1 {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
+  .ellipse-6, .ellipse-9, .ellipse-13, .ellipse-10, .ellipse-11, .ellipse-7, .ellipse-8, .ellipse-12, .ellipse-14 {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Adjust positioning for mobile screens */
+  .ellipse-6 { left: 500px; top: 250px; }
+  .ellipse-9 { left: 300px; top: 250px; }
+  .ellipse-13 { left: 400px; top: 200px; }
+  .ellipse-10 { left: 350px; top: 10px; }
+  .ellipse-11 { left: 250px; top: 250px; }
+  .ellipse-7 { left: 460px; top: 10px; }
+  .ellipse-8 { left: 440px; top: 140px; }
+  .ellipse-12 { left: 450px; top: 100px; }
+  .ellipse-14 { left: 530px; top: 50px; }
+
+
+  .ellipse-3 {
+    width: 150px;
+    height: 150px;
+    top: 80px;
+  }
+
+  .ellipse-4 {
+    width: 150px;
+    height: 150px;
+    top: 350px;
+  }
+
+  .ellipse-5 {
+    width: 180px;
+    height: 180px;
+    left: calc(50% - 370px);
+    top: 250px;
+  }
+
+  .gebeya,
+  .shop {
+    font-size: 60px;
+    left: 10px;
+    top: 100px;
+  }
+
+  .discover-a-world-of-convenience-with-our-user-friendly-platform-curaated-collections-and-exceptional-customer-service {
+    font-size: 14px;
+    width: 280px;
+    left: 10px;
+    top: 206px;
+  }
+
+  .frame-26 {
+    width: 200px;
+    height: 45px;
+    top: 540px;
+  }
+
+  .explore-now {
+    font-size: 16px;
+  }
+}

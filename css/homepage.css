@@ -1,4 +1,10 @@
+
+
+.body{
+    overflow: hidden;
+}
 .header {
+   overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,60 +110,66 @@
     background: #882bec;
     width: 100%;
     height: 769px;
-    /* position: absolute;
-    left: 0px;
-    top: 90px; */
+    overflow: hidden;
+    position: relative;
+    
   }
 
   .ellipse-3 {
+
     border-radius: 50%;
     width: 300px;
     height: 300px;
     position: absolute;
-    left: calc(50% - 150px);
-    top: 168px;
+    left: 40%;
+    top: 20%;
     object-fit: cover;
   }
   .ellipse-4 {
+
     background: linear-gradient(to left, #d9d9d9, #d9d9d9);
     border-radius: 50%;
     width: 223px;
     height: 223px;
     position: absolute;
-    left: calc(50% - -247px);
-    top: 572px;
+    right: 10%;
+    top: 70%;
     object-fit: cover;
   }
   .ellipse-5 {
+
     border-radius: 50%;
     width: 260px;
     height: 260px;
     position: absolute;
-    left: calc(50% - 514px);
-    top: 448px;
+    left: 10%;
+    top: 50%;
     object-fit: cover;
   }
   .gebeya {
+
     color: #ffffff;
     text-align: left;
     font-family: "AlfaSlabOne-Regular", sans-serif;
     font-size: 128px;
     font-weight: 400;
     position: absolute;
-    left: 80px;
-    top: 193px;
+    left: 5%;
+    top: 23%;
   }
   .shop {
+
     color: #ffffff;
     text-align: left;
     font-family: "AlfaSlabOne-Regular", sans-serif;
     font-size: 128px;
     font-weight: 400;
     position: absolute;
-    left: 884px;
-    top: 366px;
+    right: 5%;
+    top: 50%;
   }
   .discover-a-world-of-convenience-with-our-user-friendly-platform-curaated-collections-and-exceptional-customer-service {
+
     color: #ffffff;
     text-align: left;
     font-family: "Poppins-Regular", sans-serif;
@@ -165,8 +177,8 @@
     line-height: 32px;
     font-weight: 400;
     position: absolute;
-    left: 874px;
-    top: 206px;
+    right: 5%;
+    top: 23%;
     width: 435px;
   }
   .frame-26 {
@@ -418,6 +430,7 @@
     background-color: #FEA301;
   }
   .category-navigation {
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -482,7 +495,9 @@
 }
 
 .collection-item {
+ border: 1px solid rgb(199, 193, 193);
   background-color: #f9f9f9;
+  padding: 10px;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -520,6 +535,22 @@
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.see-more-btn{
+ width: 164px;
+height: 45px;
+color: white;
+padding:  8px;
+margin-left:70%;
+margin-bottom: 50px;
+border-radius: 8px;
+opacity: 0.8px;
+background: #882BECF2;
+
+}
+
+
+
 .product-section {
     display: flex;
     flex-wrap: wrap;
@@ -581,7 +612,10 @@
   }
   
   footer {
-    background-color: #333; /* Dark background */
+    width: 100%;
+    height: 323px;
+    background: #882BEC;
+   display: flex;
     color: #fff; /* White text */
     padding: 20px 40px;
     text-align: center;
@@ -591,6 +625,7 @@
     margin-bottom: 20px;
   }
   
+
   .social-icons {
     display: flex;
     justify-content: center;
@@ -608,6 +643,7 @@
   }
   
   .footer-links {
+    margin-left: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -654,11 +690,9 @@
 
     background: #d0d0d0;
     border-radius: 24px;
-    width: 1351px;
+    width: 100%;
     height: 502px;
-    position: absolute;
-    left: calc(50% - 676px);
-    top: 2561px;
+    position: relative;
     overflow: hidden;
   }
   .our-curated-summer-collection {
@@ -710,11 +744,10 @@
     position: relative;
   }
   ._131764372-table-top-view-accessory-of-clothing-women-men-plan-to-travel-in-summer-holiday-background-concept-1 {
-    width: 1241px;
+    width: 100%;
     height: 866px;
     position: absolute;
-    left: 166px;
-    top: -69px;
+   
     object-fit: cover;
   }
   .ellipse-6 {
