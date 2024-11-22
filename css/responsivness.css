@@ -116,40 +116,35 @@
   .ellipse-3 {
     width: 200px;
     height: 200px;
-    top: 100px;
   }
 
   .ellipse-4 {
     width: 180px;
     height: 180px;
-    top: 380px;
   }
 
   .ellipse-5 {
     width: 220px;
     height: 220px;
-    left: calc(50% - 400px);
-    top: 300px;
+ 
   }
 
   .gebeya,
   .shop {
     font-size: 80px;
-    left: 20px;
-    top: 130px;
+ 
   }
 
   .discover-a-world-of-convenience-with-our-user-friendly-platform-curaated-collections-and-exceptional-customer-service {
     font-size: 16px;
     width: 300px;
-    left: 20px;
-    top: 206px;
+   
   }
 
   .frame-26 {
     width: 250px;
     height: 50px;
-    top: 570px;
+   
   }
 
   .explore-now {
@@ -211,40 +206,35 @@
   .ellipse-3 {
     width: 150px;
     height: 150px;
-    top: 80px;
   }
 
   .ellipse-4 {
     width: 150px;
     height: 150px;
-    top: 350px;
   }
 
   .ellipse-5 {
     width: 180px;
     height: 180px;
-    left: calc(50% - 370px);
-    top: 250px;
+    
   }
 
   .gebeya,
   .shop {
     font-size: 60px;
-    left: 10px;
-    top: 100px;
+    
   }
 
   .discover-a-world-of-convenience-with-our-user-friendly-platform-curaated-collections-and-exceptional-customer-service {
     font-size: 14px;
     width: 280px;
-    left: 10px;
-    top: 206px;
+   
   }
 
   .frame-26 {
     width: 200px;
     height: 45px;
-    top: 540px;
+   
   }
 
   .explore-now {
