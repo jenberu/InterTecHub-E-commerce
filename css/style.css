@@ -3,11 +3,13 @@
   box-sizing: border-box;
 }
 .home-page {
+  border:2px solid red;
   background: #ffffff;
   height: 4270px;
   position: relative;
   overflow: hidden;
 }
+
 .rectangle-15 {
   background: #882bec;
   width: 1512px;
@@ -17,6 +19,7 @@
   top: 90px;
 }
 .frame-25 {
+  border:2px solid red;
   display: flex;
   flex-direction: row;
   gap: 44px;
@@ -445,6 +448,7 @@
   top: 959px;
 }
 .browse-by-category {
+
   color: #1e1e1e;
   text-align: left;
   font-family: "Poppins-SemiBold", sans-serif;
@@ -460,6 +464,8 @@
   inset: 0;
 }
 .frame-33 {
+  border:2px solid red;
+
   background: #fea301;
   border-radius: 16px;
   padding: 10px;
@@ -503,8 +509,10 @@
   position: absolute;
   left: 96px;
   top: 1099px;
+
 }
 .frame-28 {
+
   background: #f2f2f2;
   border-radius: 15px;
   align-self: stretch;
@@ -1141,6 +1149,7 @@
   position: relative;
 }
 .frame-62 {
+
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -1387,6 +1396,7 @@
   align-self: stretch;
 }
 .frame-63 {
+
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -1595,6 +1605,7 @@
   align-self: stretch;
 }
 .frame-65 {
+
   background: #d0d0d0;
   border-radius: 24px;
   width: 1351px;
@@ -1741,6 +1752,9 @@
   left: 896px;
   top: 100px;
 }
+
+
+
 .group-226 {
   position: absolute;
   inset: 0;
@@ -1787,7 +1801,12 @@
   top: 25%;
   overflow: visible;
 }
+/* .products-container{
+  border: 2px solid red;
+  position: absolute;
+} */
 .frame-334 {
+
   background: rgba(136, 43, 236, 0.95);
   border-radius: 8px;
   border-style: solid;
@@ -2000,6 +2019,8 @@
   align-self: stretch;
 }
 .frame-73 {
+  border: 2px solid red;
+
   background: #882bec;
   width: 1512px;
   height: 423px;
