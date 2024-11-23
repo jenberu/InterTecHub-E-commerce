@@ -210,3 +210,83 @@
     }
   }
   
+
+
+
+
+  .delivery-returns-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .delivery-returns-container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .location-section {
+    margin-bottom: 20px;
+  }
+  
+  .location-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .delivery-section, .return-policy-section {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .delivery-info, .return-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .delivery-info img, .return-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .delivery-details, .return-details {
+    margin-top: 10px;
+  }
+  
+  .delivery-details p, .return-details p {
+    margin: 8px 0;
+    color: #555;
+  }
+  
+  .delivery-details .note, .return-details a {
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .return-details a {
+    text-decoration: none;
+  }
+  
+  .return-details a:hover {
+    text-decoration: underline;
+  }
+  
