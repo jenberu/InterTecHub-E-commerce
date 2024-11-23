@@ -36,8 +36,26 @@ const products = [
       ratingIcon: "images/star-12.svg",
     },
 ];
+
+
+const collections = [
+    { img: "images/images-10.png", alt: "Shoes", title: "Shoes" },
+    { img: "images/images-20.png", alt: "Bags", title: "Bags" },
+    { img: "images/ghost-mannequin-beige-womens-puffer-600-nw-2482912771-20.png", alt: "Jackets", title: "Jackets" },
+    { img: "images/images-30.png", alt: "Lingerie", title: "Lingerie" },
+    { img: "images/download-10.png", alt: "Belts", title: "Belts" },
+    { img: "images/images-40.png", alt: "Street Wear", title: "Street Wear" },
+    { img: "images/personalized-big-size-human-head-sun-glasses-instagram-oversize-fashion-pink-type-pc-sunglasses-women-men-10.png", alt: "Sunglasses", title: "Sunglasses" },
+    { img: "images/f-939-e-1-d-9-85-aa-4-bd-8-bf-43-0-dd-73-ef-4001-b-9-ad-3-eb-73-ad-803-c-9733563382957-d-42-c-3-10.png", alt: "Sun Wear", title: "Sun Wear" },
+    { img: "images/pngtree-women-hat-png-image-521498-10.png", alt: "Hats", title: "Hats" },
+    { img: "images/ftw-1239-womens-striped-slippers-1-450-x-450-10.png", alt: "Slippers", title: "Slippers" },
+    { img: "images/wigs-10.png", alt: "Wigs", title: "Wigs" },
+    { img: "images/_61-n-mt-oe-2-kl-sl-1500-83801-10.png", alt: "Cosmetics", title: "Cosmetics" },
+  ];
 document.addEventListener("DOMContentLoaded", () => {
     const productGrid = document.querySelector(".product-grid");
+    const collectionsGrid = document.querySelector(".collections-grid");
+
   
     function renderProducts(products) {
       productGrid.innerHTML = ""; // Clear existing content
@@ -84,8 +102,25 @@ document.addEventListener("DOMContentLoaded", () => {
         productGrid.appendChild(productCard);
       });
     }
-  
-    // Render the products
-    renderProducts(products);
+
+function renderCollections(collections) {
+  collectionsGrid.innerHTML = ""; // Clear existing content
+
+  collections.forEach((collection) => {
+    const collectionItem = `
+      <div class="collection-item">
+        <img src="${collection.img}" alt="${collection.alt}" />
+        <div class="collection-info">
+          <h3>${collection.title}</h3>
+          <p>See all collections</p>
+        </div>
+      </div>
+    `;
+    collectionsGrid.insertAdjacentHTML("beforeend", collectionItem);   });
+    }
+ renderProducts(products);
+
+
+renderCollections(collections);
   });
   
