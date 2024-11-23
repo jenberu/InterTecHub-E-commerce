@@ -30,7 +30,7 @@ addToCartButtons.forEach((button) => {
     };
 
     // Save to Local Storage
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const existingProduct = cart.find((item) => item.id === product.id);
 
     if (existingProduct) {

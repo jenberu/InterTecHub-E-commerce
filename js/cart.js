@@ -13,7 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItem.innerHTML = `
         <div class="cart-item-image">
           <img src="${item.imgurl}" alt="${item.name}" />
+          <div class="share-social-icons">
+          <p> share  this  product</p>
+            <img src="./images/ant-design-instagram-outlined0.svg" alt="Instagram" />
+            <img src="./images/ri-whatsapp-line0.svg" alt="WhatsApp" />
+            <img src="./images/group3.svg" alt="Icon" />
+          </div>
         </div>
+
         <div class="cart-item-details">
           <h3>${item.name}</h3>
           <p>Brand: ${item.brand}</p>
