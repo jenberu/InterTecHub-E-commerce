@@ -1,0 +1,105 @@
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin-left: 100px;
+  }
+  
+  .order-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .shipping-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .shipping-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .shipping-form .form-group input,
+  .shipping-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .payment-form {
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+  }
+  
+  .payment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .payment-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .payment-form .form-group input,
+  .payment-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .payment-form .payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .payment-form .payment-option {
+    text-align: center;
+    border: 1px solid rgb(201, 194, 194);
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .payment-form .payment-option img {
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+  }
+  .payment-form  .payment-option.active{
+    background-color: rgb(228, 162, 76);
+    color: white;
+  }
+  
+  .payment-form .expiry-date {
+    display: flex;
+    gap: 10px;
+  }
+  
+ 
+ 
+  
+  
