@@ -7,7 +7,7 @@
     border-radius: 8px;
     width: fit-content;
     font-family: Arial, sans-serif;
-    margin: 50px;
+    margin: 50px 50px 0 50px;
   }
   
   /* Styling for each category item */
@@ -38,7 +38,7 @@
 
   .cart-container{
     display: grid;
-  grid-template-columns: 60% 40%; /* First column is 60%, second is 40% */
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
   gap: 20px; 
 
   }
@@ -52,7 +52,7 @@
   }
   
   .cart-item {
-    border: 1px solid red;
+    
    width: 100%;
     display: flex;
     align-items: flex-start;
@@ -67,13 +67,14 @@
   }
   
   .cart-item-image img {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
   }
   
   .cart-item-details {
+    gap: 20px;
     flex-grow: 1;
   }
   
@@ -87,6 +88,9 @@
   .cart-item-details p {
     margin: 5px 0;
     color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+
   }
 
 
@@ -136,17 +140,20 @@
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-    border: none;
     border-radius: 5px;
+    border: 2px solid black;
   }
   
   .add-to-cart {
-    background-color: #28a745;
-    color: white;
+    color: #333;
+    height: 50px;
+    margin-right:10px ;
   }
   
   .buy-now {
-    background-color: #007bff;
+    background-color: #FEA301;
+    height: 50px;
+
     color: white;
   }
   
@@ -164,6 +171,7 @@
     width: 20%;
     height: 20px;
     text-align: left;
+    cursor: pointer;
     
     border: 1px solid #f3eeee;
 
@@ -296,11 +304,11 @@
   .delivery-returns-container {
     font-family: Arial, sans-serif;
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color:white;
+    font-size: 16px;
+
   }
   
   .delivery-returns-container h2 {
@@ -310,14 +318,11 @@
     color: #333;
   }
   
-  .location-section {
-    margin-bottom: 20px;
-  }
+
   
   .location-section label {
     display: block;
     font-weight: bold;
-    margin-bottom: 8px;
     color: #555;
   }
   
@@ -352,12 +357,10 @@
   }
   
   .delivery-details p, .return-details p {
-    margin: 8px 0;
     color: #555;
   }
   
   .delivery-details .note, .return-details a {
-    color: #007BFF;
     font-weight: bold;
   }
   

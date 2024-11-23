@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${item.name}</h3>
           <p>Brand: ${item.brand}</p>
           <p>Price: $${item.price}</p>
+          <p>Total: <span id="total-${item.id}">$${(item.quantity * item.price).toFixed(2)}</span></p>
+
            <p>
            <img src="./images/star-12.svg" alt="Rating Star" /> ${item.rating}</p>           
        <p class="cart-item-quantity">
@@ -130,9 +132,27 @@ colorOptions.addEventListener("click", (e) => {
   
     // Update total
     function updateTotal() {
-      total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-      cartTotal.textContent = `$${total.toFixed(2)}`;
+      // Calculate the total for the entire cart
+      const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    
+      // Update the total amount in the cart summary
+      const cartTotal = document.getElementById("cart-total");
+      if (cartTotal) {
+        cartTotal.textContent = `$${total.toFixed(2)}`;
+      }
+    
+      // Update the total for each individual cart item
+      cart.forEach((item) => {
+        const itemTotalElement = document.querySelector(`#total-${item.id}`);
+        if (itemTotalElement) {
+          itemTotalElement.textContent = `$${(item.price * item.quantity).toFixed(2)}`;
+        }
+      });
+    
+      // Save the cart in localStorage
+      localStorage.setItem("cart", JSON.stringify(cart));
     }
+    
   
     // Initialize total
     updateTotal();
