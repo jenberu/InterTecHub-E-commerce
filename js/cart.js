@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cartContainer = document.querySelector(".cart-items");
-    const cartTotal = document.getElementById("cart-total");
+  const cartTotal = document.getElementById("cart-total");
+  const cartCount=document.querySelector('.cart-count')
+
   
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  
-    let total = 0;
-  
-  cart.forEach((item) => {
+  cartCount.innerHTML = cart.length;
+  let total = 0;
+  let product=[]
+  if (product.length === 0) {
+    product.push(cart[cart.length-1])
+  }
+  product.forEach((item) => {
      const productdesc = document.querySelector('.desc')
       const cartItem = document.createElement("div");
       cartItem.classList.add("cart-item");

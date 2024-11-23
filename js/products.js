@@ -58,7 +58,8 @@ const collections = [
   ];
 document.addEventListener("DOMContentLoaded", () => {
     const productGrid = document.querySelector(".product-grid");
-    const collectionsGrid = document.querySelector(".collections-grid");
+  const collectionsGrid = document.querySelector(".collections-grid");
+  const cartCount=document.querySelector('.cart-count')
 
   
     function renderProducts(products) {
@@ -132,6 +133,7 @@ function renderCollections(collections) {
 
     
 const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 addToCartButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -149,13 +151,11 @@ addToCartButtons.forEach((button) => {
     };
 
     // Save to Local Storage
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const existingProduct = cart.find((item) => item.id === product.id);
 
     if (existingProduct) {
       existingProduct.quantity += 1; // Increase quantity if already in cart
     } else {
-      cart = [];
       cart.push(product);
     }
 
@@ -164,6 +164,7 @@ addToCartButtons.forEach((button) => {
     // Redirect to cart page
     window.location.href = "cart.html";
   });
+  cartCount.innerHTML = cart.length
 });
 
 
