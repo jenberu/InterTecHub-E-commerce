@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="css/responsivness.css">
     <link rel="stylesheet" href="css/cart.css">
 
+ <script src='js/cart.js'></script>
+  <script src='js/toggle.js'></script>
 
-  
-  
   <style>
    a,
    button,
@@ -201,7 +201,7 @@
 
 
 
- <main>
+ <main id="main">
     <div class="cart-container">
       <div class="cart-items">
         <!-- Items will be dynamically rendered here -->
@@ -256,6 +256,22 @@
 
       
     </div>
+
+  <div class='product-info'>
+        <div class="frame">
+        <div class="tab-item active" id="overview-tab">Overview</div>
+        <div class="tab-item" id="description-tab">Description</div>
+        <div class="tab-item" id="warranty-tab">Warranty</div>
+        <div class="tab-item" id="reviews-tab">Reviews</div>
+      </div>
+      <div class='desc'>
+      
+      <!-- Product description will be dynamically loaded here -->
+      </div>
+
+
+   <div>
+
   </main>
 
 
@@ -307,7 +323,6 @@
   </div>
 </footer>
 
-  <script src='js/cart.js'>
-</script>
+ 
 </body>
 </html>

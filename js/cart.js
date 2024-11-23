@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
     let total = 0;
   
-    cart.forEach((item) => {
+  cart.forEach((item) => {
+     const productdesc = document.querySelector('.desc')
       const cartItem = document.createElement("div");
       cartItem.classList.add("cart-item");
   
@@ -60,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         </div>
       `;
+      productdesc.innerText = item.description || "No description available";
   
       cartContainer.appendChild(cartItem);
       total += item.price * item.quantity;

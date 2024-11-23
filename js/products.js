@@ -10,6 +10,7 @@ const products = [
       wishlistIcon: "images/gridicons-heart-outline0.svg",
       stockStatus: "In Stock",
       ratingIcon: "images/star-10.svg",
+      description: "A chic and elegant handbag designed for modern women. Perfect for both casual and formal occasions, it adds a touch of sophistication to your outfit.",
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ const products = [
       wishlistIcon: "images/gridicons-heart-outline1.svg",
       stockStatus: "In Stock",
       ratingIcon: "images/star-11.svg",
+      description: "A stylish and durable backpack for kids. Featuring vibrant colors and ample space, it is perfect for school or day trips.",
     },
     {
       id: 3,
@@ -34,8 +36,10 @@ const products = [
       wishlistIcon: "images/gridicons-heart-outline2.svg",
       stockStatus: "In Stock",
       ratingIcon: "images/star-12.svg",
+      description: "An exquisite evening gown crafted from premium fabric. This gown is tailored to accentuate your elegance for special occasions.",
     },
-];
+  ];
+  
 
 
 const collections = [
@@ -94,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
               data-price="${product.price}"
               data-product-image="${product.imgurl}"
               data-rating="${product.rating}"
+              data-description="${product.description}"
             >
               Add to Cart
             </button>
@@ -121,6 +126,49 @@ function renderCollections(collections) {
  renderProducts(products);
 
 
-renderCollections(collections);
+    renderCollections(collections);
+    
+
+
+    
+const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
+
+addToCartButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const product = {
+      id: button.getAttribute("data-id"),
+      name: button.getAttribute("data-name"),
+      brand: button.getAttribute("data-brand"),
+      price: parseFloat(button.getAttribute("data-price")),
+      quantity: 1, 
+      size: "M", 
+      color: "default", 
+      rating: button.getAttribute("data-rating"),
+      imgurl: button.getAttribute("data-product-image"),
+      description: button.getAttribute("data-description"),
+    };
+
+    // Save to Local Storage
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingProduct = cart.find((item) => item.id === product.id);
+
+    if (existingProduct) {
+      existingProduct.quantity += 1; // Increase quantity if already in cart
+    } else {
+      cart = [];
+      cart.push(product);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Redirect to cart page
+    window.location.href = "cart.html";
+  });
+});
+
+
+
+
+  // Function to load content
   });
   
