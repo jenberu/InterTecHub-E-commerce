@@ -35,8 +35,16 @@
     margin-left: 10px;
   }
   
-/* General Cart Styling */
-.cart-items {
+
+  .cart-container{
+    display: grid;
+  grid-template-columns: 60% 40%; /* First column is 60%, second is 40% */
+  gap: 20px; 
+
+  }
+
+  .cart-items {
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 20px;
