@@ -36,6 +36,7 @@ addToCartButtons.forEach((button) => {
     if (existingProduct) {
       existingProduct.quantity += 1; // Increase quantity if already in cart
     } else {
+      cart = [];
       cart.push(product);
     }
 
