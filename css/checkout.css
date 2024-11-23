@@ -1,3 +1,11 @@
+
+.checkout-section{
+    display: grid;
+    grid-template-columns: 60% 35% ;
+
+}
+
+
 .order-form {
     display: flex;
     flex-direction: column;
@@ -102,4 +110,100 @@
  
  
   
+  /* order summer section*/
+
+  .order-summary-container {
+    padding: 20px;
+    border: 1px solid #d83737;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: fit-content;
+  }
   
+  .order-summary-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .product-name {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .product-brand {
+    color: #666;
+    margin: 5px 0 0;
+  }
+  
+  .pricing-summary {
+    margin-bottom: 20px;
+  }
+  
+  .pricing-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .total-row .label {
+    font-weight: bold;
+  }
+  
+  .total-row .value {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .place-order-button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #FEA301;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .place-order-button:hover {
+    background-color: #FEA301;
+  }
+  
+
+
+  @media (max-width: 768px) {
+
+   .checkout-section{
+        grid-template-columns: 1fr;
+    }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 970px) {
+    .order-form{
+        margin-left: 0;
+    }
+  }
