@@ -119,9 +119,9 @@
     margin-right: 5px;
   }
   .user-dropdown {
-    display: none; /* Initially hidden */
+    display: none; 
     position: absolute;
-    top: 100%; /* Align below the user actions */
+    top: 100%; 
     right: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
