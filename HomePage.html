@@ -37,7 +37,7 @@
        padding: 0;
    }
    </style>
-  <title>Document</title>
+  <title>Gebeya</title>
 </head>
 <body>
 <div class="home-page">
@@ -85,6 +85,10 @@
           src="images/elements0.svg"
           alt="Dropdown Arrow"
         />
+     <div class="user-dropdown">
+      <button class="dropdown-btn register-btn">Register</button>
+      <button class="dropdown-btn sign-in-btn">Sign In</button>
+    </div>
       </div>
     </div>
     <div class="nav-items">
@@ -101,6 +105,15 @@
           src="images/elements1.svg"
           alt="Dropdown Arrow"
         />
+         <div class="dropdown-items">
+        <div class="perfumes">Perfumes</div>
+        <div class="jewelries">Jewelries</div>
+        <div class="gym-wears">Gym wears</div>
+        <div class="vintage-wears">Vintage wears</div>
+        <div class="sport-wear">Sport wear</div>
+        <div class="pyjamas">Pyjamas</div>
+        <div class="slippers">Slippers</div>
+      </div>
       </li>
       </div>
     </ul>
@@ -516,18 +529,7 @@
   </div>
 </footer>
 
-  <script>function toggleMenu(isOpen) {
-  const navLinks = document.querySelector('.nav-links');
-  const menuIcons = document.querySelector('.menu-icons');
-
-  if (isOpen) {
-    navLinks.classList.add('show'); // Show menu
-    menuIcons.classList.add('open'); // Switch to close icon
-  } else {
-    navLinks.classList.remove('show'); // Hide menu
-    menuIcons.classList.remove('open'); // Switch to open icon
-  }
-}
+  <script src='js/homepage.js'>
 </script>
 </body>
 </html>

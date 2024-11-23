@@ -1,5 +1,4 @@
 
-/* For Tablets (portrait) and smaller screens */
 
 
 
@@ -125,7 +124,9 @@
 
 @media (max-width: 768px) {
 
- 
+  .header {
+    width: 100%;
+  }
 
 
   .our-curated-summer-collection {
@@ -220,24 +221,29 @@
 }
 
 /* For Mobile Devices */
-@media (max-width: 480px) {
-  .frame-65 {
-    height: auto;
-    padding: 15px;
+@media (max-width: 530px) {
+  .language-currency-section {
+    display: none;
   }
+}
+@media (max-width: 480px) {
+  .search-section {
+
+    width:150px;
+  }
+ 
+ 
 
   .our-curated-summer-collection {
     font-size: 24px;
     width: 100%;
-    left: 10px;
-    top: 10px;
+   
   }
 
   .explore-our-curated-summer-collection-featuring-trending-styles-vibrant-colors-and-lightweight-fabrics-perfect-for-long-days-and-nights {
     font-size: 16px;
     width: 100%;
-    left: 10px;
-    top: 120px;
+ 
   }
 
   .frame-66 {
@@ -247,15 +253,11 @@
   }
 
   ._131764372-table-top-view-accessory-of-clothing-women-men-plan-to-travel-in-summer-holiday-background-concept-1 {
-    width: 100%;
-    height: auto;
-    left: 0;
-    top: 0;
+ display: none;
   }
 
   .ellipse-6, .ellipse-9, .ellipse-13, .ellipse-10, .ellipse-11, .ellipse-7, .ellipse-8, .ellipse-12, .ellipse-14 {
-    width: 25px;
-    height: 25px;
+   display: none;
   }
 
   /* Adjust positioning for mobile screens */
