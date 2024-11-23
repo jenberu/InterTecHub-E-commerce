@@ -18,31 +18,37 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${item.name}</h3>
           <p>Brand: ${item.brand}</p>
           <p>Price: $${item.price}</p>
-          <p>Rating: ${item.rating} stars</p>
-  
-          <div class="cart-item-size">
-            <label for="size-${item.id}">Size:</label>
-            <select id="size-${item.id}" data-id="${item.id}" class="size-select">
-              <option value="S" ${item.size === "S" ? "selected" : ""}>S</option>
-              <option value="M" ${item.size === "M" ? "selected" : ""}>M</option>
-              <option value="L" ${item.size === "L" ? "selected" : ""}>L</option>
-            </select>
-          </div>
-  
-          <div class="cart-item-color">
-            <label for="color-${item.id}">Color:</label>
-            <select id="color-${item.id}" data-id="${item.id}" class="color-select">
-              <option value="default" ${item.color === "default" ? "selected" : ""}>Default</option>
-              <option value="red" ${item.color === "red" ? "selected" : ""}>Red</option>
-              <option value="blue" ${item.color === "blue" ? "selected" : ""}>Blue</option>
-            </select>
-          </div>
-  
-          <div class="cart-item-quantity">
+           <p>
+           <img src="./images/star-12.svg" alt="Rating Star" /> ${item.rating}</p>           
+       <p class="cart-item-quantity">
+            <label for="quantity-${item.id}">Quantity:</label>
             <button class="quantity-button minus" data-id="${item.id}">-</button>
-            <input type="number" id="quantity-${item.id}" value="${item.quantity}" min="1" class="quantity-input" />
+            <input type="text" id="quantity-${item.id}" value="${item.quantity}" min="1" class="quantity-input" />
             <button class="quantity-button plus" data-id="${item.id}">+</button>
-          </div>
+          </p>
+        <div class="cart-item-size">
+          <p class="size-options" data-id="${item.id}">
+            <label>Size:</label>
+
+            <button class="size-button ${item.size === "20" ? "active" : ""}" data-size="20">20</button>
+            <button class="size-button ${item.size === "25" ? "active" : ""}" data-size="25">25</button>
+            <button class="size-button ${item.size === "30" ? "active" : ""}" data-size="30">30</button>
+          </p>
+        </div>
+  
+        <div class="cart-item-color">
+            <p class="color-options" data-id="${item.id}">
+              <label>Color:</label>
+              <button class="color-box blue ${item.color === 'blue' ? 'active' : ''}" data-color="blue"></button>
+              <button class="color-box red ${item.color === 'red' ? 'active' : ''}" data-color="red"></button>
+              <button class="color-box black ${item.color === 'black' ? 'active' : ''}" data-color="black"></button>
+              <button class="color-box brown ${item.color === 'brown' ? 'active' : ''}" data-color="brown"></button>
+            </p>
+         </div>
+          <div class="cart-actions">
+          <button class="add-to-cart" data-id="${item.id}">Add to Cart</button>
+          <button class="buy-now" data-id="${item.id}">Buy Now</button>
+        </div>
         </div>
       `;
   
@@ -50,20 +56,43 @@ document.addEventListener("DOMContentLoaded", () => {
       total += item.price * item.quantity;
   
       // Handle size change
-      const sizeSelect = cartItem.querySelector(`#size-${item.id}`);
-      sizeSelect.addEventListener("change", (e) => {
-        item.size = e.target.value;
-        localStorage.setItem("cart", JSON.stringify(cart));
-        updateTotal();
-      });
+    // Add event listener for size selection buttons
+const sizeOptions = cartItem.querySelector(".size-options"); // Select the size options container
+sizeOptions.addEventListener("click", (e) => {
+  if (e.target.classList.contains("size-button")) {
+    const selectedSize = e.target.dataset.size; // Get the size value from the button
+    item.size = selectedSize; // Update the item size in the cart
+    localStorage.setItem("cart", JSON.stringify(cart)); // Save the updated cart to localStorage
+
+    // Remove 'active' class from all size buttons in this item
+    sizeOptions.querySelectorAll(".size-button").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    // Add 'active' class to the clicked button
+    e.target.classList.add("active");
+  }
+  updateTotal();
+});
+
   
-      // Handle color change
-      const colorSelect = cartItem.querySelector(`#color-${item.id}`);
-      colorSelect.addEventListener("change", (e) => {
-        item.color = e.target.value;
-        localStorage.setItem("cart", JSON.stringify(cart));
-        updateTotal();
-      });
+    // Handle color change with color boxes
+const colorOptions = cartItem.querySelector(".color-options");
+colorOptions.addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-box")) {
+    const selectedColor = e.target.dataset.color; // Get the selected color from the clicked button
+    item.color = selectedColor; // Update the item's color in the cart array
+    localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart to localStorage
+    updateTotal(); // Update the cart total
+
+    // Update the active state of color buttons
+    colorOptions.querySelectorAll(".color-box").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+  }
+});
+
   
       // Handle quantity change via buttons
       const quantityInput = cartItem.querySelector(`#quantity-${item.id}`);
