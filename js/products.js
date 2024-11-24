@@ -57,9 +57,9 @@ const collections = [
     { img: "images/_61-n-mt-oe-2-kl-sl-1500-83801-10.png", alt: "Cosmetics", title: "Cosmetics" },
   ];
 document.addEventListener("DOMContentLoaded", () => {
+
     const productGrid = document.querySelector(".product-grid");
   const collectionsGrid = document.querySelector(".collections-grid");
-  const cartCount=document.querySelector('.cart-count')
 
   
     function renderProducts(products) {
@@ -164,7 +164,6 @@ addToCartButtons.forEach((button) => {
     // Redirect to cart page
     window.location.href = "cart.html";
   });
-  cartCount.innerHTML = cart.length
 });
 
 

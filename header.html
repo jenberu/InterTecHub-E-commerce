@@ -1,8 +1,5 @@
 <header class="header">
-  <!-- Logo Section -->
-
-
-  <!-- Navigation Section -->
+ <!-- Navigation Section -->
   <nav class="nav-bar">
     <!-- User Options -->
     
@@ -125,7 +122,19 @@
       />
     </div>
     <div class="cart-badge">
-      <span class="cart-count">2</span>
+    <span class="cart-count">0</span>
     </div>
   </div>
 </header>
+
+<script> 
+ function updateCartCount() {
+  let cartCount=document.querySelector('.cart-count')
+
+   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+     cartCount.innerHTML = cart.length 
+     console.log(cartCount.innerHTML)
+
+  }
+updateCartCount() ;
+</script>

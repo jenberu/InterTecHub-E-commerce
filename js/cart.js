@@ -1,11 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cartContainer = document.querySelector(".cart-items");
   const cartTotal = document.getElementById("cart-total");
-  const cartCount=document.querySelector('.cart-count')
-
-  
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cartCount.innerHTML = cart.length;
+ const cart = JSON.parse(localStorage.getItem("cart")) || [];
   let total = 0;
   let product=[]
   if (product.length === 0) {

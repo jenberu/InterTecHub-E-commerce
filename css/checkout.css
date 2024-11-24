@@ -126,9 +126,16 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
+  #order-items-container{
+    border-bottom: 2px solid #00ff2a;
+      gap:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+  }
   
   .order-item {
-    border: 2px solid #1900ff;
+    border: 1px solid hsl(245, 18%, 88%);
 
     display: flex;
     align-items: center;
@@ -145,7 +152,6 @@
   
   .product-details {
     flex-grow: 1;
-    border: 2px solid red;
   }
   
   .product-name {
@@ -209,4 +215,8 @@
     .order-form{
         margin-left: 0;
     }
+  }
+  #footer{
+    width: 95%;
+
   }
