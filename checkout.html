@@ -109,45 +109,38 @@
  </form>
 </div>
 </div>
+
+
 <div class="order-summary-container">
   <h2>Order Summary</h2>
 
-  <!-- Product Details -->
-  <div class="order-item">
-    <img
-      class="product-image"
-      src="images/_61-oej-shh-py-l-sy-625-30.png"
-      alt="Burberry Shine product image"
-    />
-    <div class="product-details">
-      <p class="product-name">Burberry Shine</p>
-      <p class="product-brand">FENDI</p>
-    </div>
-  </div>
+  <!-- Product List Container -->
+  <div id="order-items-container"></div>
 
   <!-- Pricing Breakdown -->
   <div class="pricing-summary">
     <div class="pricing-row">
       <span class="label">Subtotal</span>
-      <span class="value">$150</span>
+      <span id="subtotal" class="value">$0</span>
     </div>
     <div class="pricing-row">
       <span class="label">Shipping</span>
-      <span class="value">$10</span>
+      <span id="shipping" class="value">$10</span>
     </div>
     <div class="pricing-row">
       <span class="label">Tax</span>
-      <span class="value">$5</span>
+      <span id="tax" class="value">$0</span>
     </div>
     <div class="pricing-row total-row">
       <span class="label">Total</span>
-      <span class="value">$165</span>
+      <span id="total" class="value">$0</span>
     </div>
   </div>
 
   <!-- Place Order Button -->
   <button class="place-order-button">Place Order</button>
 </div>
+
 
 </div>
 
