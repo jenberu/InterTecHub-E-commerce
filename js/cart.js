@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </p>
          </div>
           <div class="cart-actions">
-          <button class="add-to-cart" data-id="${item.id}">Add to Cart</button>
+          <button class="remove-item"  data-id="${item.id}"> Remove </button>
           <button class="buy-now" data-id="${item.id}">Buy Now</button>
         </div>
         </div>
@@ -165,6 +165,15 @@ colorOptions.addEventListener("click", (e) => {
     
   
     // Initialize total
-    updateTotal();
+  updateTotal();
+  
+
+
+
+  document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("buy-now")) {
+      window.location.href="checkout.html"
+    }
+  });
   });
   

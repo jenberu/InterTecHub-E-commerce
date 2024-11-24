@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const orderItemsContainer = document.getElementById("order-items-container");
@@ -41,6 +42,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // Update pricing
     subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
     taxElement.textContent = `$${tax.toFixed(2)}`;
-    totalElement.textContent = `$${total.toFixed(2)}`;
+  totalElement.textContent = `$${total.toFixed(2)}`;
+  
+
+ 
+
+
+  document.querySelector('.place-order-button').addEventListener('click', handlePlaceOrder);
+  function handlePlaceOrder() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    // Clear the cart
+    localStorage.setItem("cart", JSON.stringify([]));
+    alert(" Order placed successfully ,Thank you for your order!");
+    window.location.href = "homePage.html";
+
+}
+
   });
   

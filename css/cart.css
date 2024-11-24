@@ -157,10 +157,9 @@
     border-radius: 5px;
   }
   
-  .add-to-cart {
-    border: 2px solid black;
-
-    color: #333;
+  .remove-item {
+   background-color: red;
+    color: #ffffff;
     height: 50px;
     margin-right:10px ;
   }
