@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Clear the cart
     localStorage.setItem("cart", JSON.stringify([]));
     alert(" Order placed successfully ,Thank you for your order!");
-    window.location.href = "homePage.html";
+    window.location.href = "index.html";
 
 }
 

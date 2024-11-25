@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("cart", JSON.stringify(cart));
   
     updateCartCount();
-    window.location.href = "homePage.html";
+    window.location.href = "index.html";
 
   }
 
