@@ -6,7 +6,7 @@ const products = [
       price: 500,
       category: "Women",
       rating: "2k+ rating",
-      imgurl: "images/_03-d-69120-edd-5-c-8-b-1-e-2-c-140-e-4-dc-7-f-254-e-20.png",
+      imgurl: "images/bag.png",
       wishlistIcon: "images/gridicons-heart-outline0.svg",
       stockStatus: "In Stock",
       ratingIcon: "images/star-10.svg",
@@ -19,7 +19,7 @@ const products = [
       price: 150,
       category: "Kids",
       rating: "1k+ rating",
-      imgurl: "images/_61-oej-shh-py-l-sy-625-20.png",
+      imgurl: "images/shose.png",
       wishlistIcon: "images/gridicons-heart-outline1.svg",
       stockStatus: "In Stock",
       ratingIcon: "images/star-11.svg",
@@ -32,7 +32,7 @@ const products = [
       price: 300,
       category: "Women",
       rating: "5K+ rating",
-      imgurl: "images/_150577-brown-9-20.png",
+      imgurl: "images/kemis.png",
       wishlistIcon: "images/gridicons-heart-outline2.svg",
       stockStatus: "In Stock",
       ratingIcon: "images/star-12.svg",
@@ -54,7 +54,7 @@ const collections = [
     { img: "images/pngtree-women-hat-png-image-521498-10.png", alt: "Hats", title: "Hats" },
     { img: "images/ftw-1239-womens-striped-slippers-1-450-x-450-10.png", alt: "Slippers", title: "Slippers" },
     { img: "images/wigs-10.png", alt: "Wigs", title: "Wigs" },
-    { img: "images/_61-n-mt-oe-2-kl-sl-1500-83801-10.png", alt: "Cosmetics", title: "Cosmetics" },
+    { img: "images/Cosmetics.png", alt: "Cosmetics", title: "Cosmetics" },
   ];
 document.addEventListener("DOMContentLoaded", () => {
 
