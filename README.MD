@@ -1,4 +1,5 @@
 My JavaScript + HTML Project
+
 NOTE: this project is on progress and will be updated
 
 A simple web project developed using HTML, CSS, and JavaScript. This project was built and tested using the Live Server extension in Visual Studio Code.
